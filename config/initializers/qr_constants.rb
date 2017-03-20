@@ -23,7 +23,7 @@ CHARACTER_CAPACITY = {
       alphanumeric: 10,
       byte: 7,
       kanji: 4
-    },
+    }
   },
   2 => {
     L: {
@@ -49,7 +49,7 @@ CHARACTER_CAPACITY = {
       alphanumeric: 20,
       byte: 14,
       kanji: 8
-    },
+    }
   },
   3 => {
     L: {
@@ -75,7 +75,7 @@ CHARACTER_CAPACITY = {
       alphanumeric: 35,
       byte: 24,
       kanji: 15
-    },
+    }
   },
   4 => {
     L: {
@@ -101,7 +101,7 @@ CHARACTER_CAPACITY = {
       alphanumeric: 50,
       byte: 34,
       kanji: 21
-    },
+    }
   },
   5 => {
     L: {
@@ -127,7 +127,7 @@ CHARACTER_CAPACITY = {
       alphanumeric: 64,
       byte: 44,
       kanji: 27
-    },
+    }
   },
   6 => {
     L: {
@@ -1059,5 +1059,568 @@ CHARACTER_COUNT_INDICATOR = {
     alphanumeric: 13,
     byte: 16,
     kanji: 12
+  }
+}.freeze
+
+ERROR_CORRECTION_CODEWORDS = {
+  1 => {
+    L: {
+      total_codewords: 19
+    },
+    M: {
+      total_codewords: 16
+    },
+    Q: {
+      total_codewords: 13
+    },
+    H: {
+      total_codewords: 9
+    }
+  },
+  2 => {
+    L: {
+      total_codewords: 34
+    },
+    M: {
+      total_codewords: 28
+    },
+    Q: {
+      total_codewords: 22
+    },
+    H: {
+      total_codewords: 16
+    }
+  },
+  3 => {
+    L: {
+      total_codewords: 55
+    },
+    M: {
+      total_codewords: 44
+    },
+    Q: {
+      total_codewords: 34
+    },
+    H: {
+      total_codewords: 26
+    }
+  },
+  4 => {
+    L: {
+      total_codewords: 80
+    },
+    M: {
+      total_codewords: 64
+    },
+    Q: {
+      total_codewords: 48
+    },
+    H: {
+      total_codewords: 36
+    }
+  },
+  5 => {
+    L: {
+      total_codewords: 108
+    },
+    M: {
+      total_codewords: 86
+    },
+    Q: {
+      total_codewords: 62
+    },
+    H: {
+      total_codewords: 46
+    }
+  },
+  6 => {
+    L: {
+      total_codewords: 136
+    },
+    M: {
+      total_codewords: 108
+    },
+    Q: {
+      total_codewords: 76
+    },
+    H: {
+      total_codewords: 60
+    }
+  },
+  7 => {
+    L: {
+      total_codewords: 156
+    },
+    M: {
+      total_codewords: 124
+    },
+    Q: {
+      total_codewords: 88
+    },
+    H: {
+      total_codewords: 66
+    }
+  },
+  8 => {
+    L: {
+      total_codewords: 194
+    },
+    M: {
+      total_codewords: 154
+    },
+    Q: {
+      total_codewords: 110
+    },
+    H: {
+      total_codewords: 86
+    }
+  },
+  9 => {
+    L: {
+      total_codewords: 232
+    },
+    M: {
+      total_codewords: 182
+    },
+    Q: {
+      total_codewords: 132
+    },
+    H: {
+      total_codewords: 100
+    }
+  },
+  10 => {
+    L: {
+      total_codewords: 274
+    },
+    M: {
+      total_codewords: 216
+    },
+    Q: {
+      total_codewords: 154
+    },
+    H: {
+      total_codewords: 122
+    }
+  },
+  11 => {
+    L: {
+      total_codewords: 324
+    },
+    M: {
+      total_codewords: 254
+    },
+    Q: {
+      total_codewords: 180
+    },
+    H: {
+      total_codewords: 140
+    }
+  },
+  12 => {
+    L: {
+      total_codewords: 370
+    },
+    M: {
+      total_codewords: 290
+    },
+    Q: {
+      total_codewords: 206
+    },
+    H: {
+      total_codewords: 158
+    }
+  },
+  13 => {
+    L: {
+      total_codewords: 428
+    },
+    M: {
+      total_codewords: 334
+    },
+    Q: {
+      total_codewords: 244
+    },
+    H: {
+      total_codewords: 180
+    }
+  },
+  14 => {
+    L: {
+      total_codewords: 461
+    },
+    M: {
+      total_codewords: 365
+    },
+    Q: {
+      total_codewords: 261
+    },
+    H: {
+      total_codewords: 197
+    }
+  },
+  15 => {
+    L: {
+      total_codewords: 523
+    },
+    M: {
+      total_codewords: 415
+    },
+    Q: {
+      total_codewords: 295
+    },
+    H: {
+      total_codewords: 223
+    }
+  },
+  16 => {
+    L: {
+      total_codewords: 589
+    },
+    M: {
+      total_codewords: 453
+    },
+    Q: {
+      total_codewords: 325
+    },
+    H: {
+      total_codewords: 253
+    }
+  },
+  17 => {
+    L: {
+      total_codewords: 647
+    },
+    M: {
+      total_codewords: 507
+    },
+    Q: {
+      total_codewords: 367
+    },
+    H: {
+      total_codewords: 283
+    }
+  },
+  18 => {
+    L: {
+      total_codewords: 721
+    },
+    M: {
+      total_codewords: 563
+    },
+    Q: {
+      total_codewords: 397
+    },
+    H: {
+      total_codewords: 313
+    }
+  },
+  19 => {
+    L: {
+      total_codewords: 795
+    },
+    M: {
+      total_codewords: 627
+    },
+    Q: {
+      total_codewords: 445
+    },
+    H: {
+      total_codewords: 341
+    }
+  },
+  20 => {
+    L: {
+      total_codewords: 861
+    },
+    M: {
+      total_codewords: 669
+    },
+    Q: {
+      total_codewords: 485
+    },
+    H: {
+      total_codewords: 385
+    }
+  },
+  21 => {
+    L: {
+      total_codewords: 932
+    },
+    M: {
+      total_codewords: 714
+    },
+    Q: {
+      total_codewords: 512
+    },
+    H: {
+      total_codewords: 406
+    }
+  },
+  22 => {
+    L: {
+      total_codewords: 1006
+    },
+    M: {
+      total_codewords: 782
+    },
+    Q: {
+      total_codewords: 568
+    },
+    H: {
+      total_codewords: 442
+    }
+  },
+  23 => {
+    L: {
+      total_codewords: 1094
+    },
+    M: {
+      total_codewords: 860
+    },
+    Q: {
+      total_codewords: 614
+    },
+    H: {
+      total_codewords: 464
+    }
+  },
+  24 => {
+    L: {
+      total_codewords: 1174
+    },
+    M: {
+      total_codewords: 914
+    },
+    Q: {
+      total_codewords: 664
+    },
+    H: {
+      total_codewords: 514
+    }
+  },
+  25 => {
+    L: {
+      total_codewords: 1276
+    },
+    M: {
+      total_codewords: 1000
+    },
+    Q: {
+      total_codewords: 718
+    },
+    H: {
+      total_codewords: 538
+    }
+  },
+  26 => {
+    L: {
+      total_codewords: 1370
+    },
+    M: {
+      total_codewords: 1062
+    },
+    Q: {
+      total_codewords: 754
+    },
+    H: {
+      total_codewords: 596
+    }
+  },
+  27 => {
+    L: {
+      total_codewords: 1468
+    },
+    M: {
+      total_codewords: 1128
+    },
+    Q: {
+      total_codewords: 808
+    },
+    H: {
+      total_codewords: 628
+    }
+  },
+  28 => {
+    L: {
+      total_codewords: 1531
+    },
+    M: {
+      total_codewords: 1193
+    },
+    Q: {
+      total_codewords: 871
+    },
+    H: {
+      total_codewords: 661
+    }
+  },
+  29 => {
+    L: {
+      total_codewords: 1631
+    },
+    M: {
+      total_codewords: 1267
+    },
+    Q: {
+      total_codewords: 911
+    },
+    H: {
+      total_codewords: 701
+    }
+  },
+  30 => {
+    L: {
+      total_codewords: 1735
+    },
+    M: {
+      total_codewords: 1373
+    },
+    Q: {
+      total_codewords: 985
+    },
+    H: {
+      total_codewords: 745
+    }
+  },
+  31 => {
+    L: {
+      total_codewords: 1843
+    },
+    M: {
+      total_codewords: 1455
+    },
+    Q: {
+      total_codewords: 1033
+    },
+    H: {
+      total_codewords: 793
+    }
+  },
+  32 => {
+    L: {
+      total_codewords: 1955
+    },
+    M: {
+      total_codewords: 1541
+    },
+    Q: {
+      total_codewords: 1115
+    },
+    H: {
+      total_codewords: 845
+    }
+  },
+  33 => {
+    L: {
+      total_codewords: 2071
+    },
+    M: {
+      total_codewords: 1631
+    },
+    Q: {
+      total_codewords: 1171
+    },
+    H: {
+      total_codewords: 901
+    }
+  },
+  34 => {
+    L: {
+      total_codewords: 2191
+    },
+    M: {
+      total_codewords: 1725
+    },
+    Q: {
+      total_codewords: 1231
+    },
+    H: {
+      total_codewords: 961
+    }
+  },
+  35 => {
+    L: {
+      total_codewords: 2306
+    },
+    M: {
+      total_codewords: 1812
+    },
+    Q: {
+      total_codewords: 1286
+    },
+    H: {
+      total_codewords: 986
+    }
+  },
+  36 => {
+    L: {
+      total_codewords: 2434
+    },
+    M: {
+      total_codewords: 1914
+    },
+    Q: {
+      total_codewords: 1354
+    },
+    H: {
+      total_codewords: 1054
+    }
+  },
+  37 => {
+    L: {
+      total_codewords: 2566
+    },
+    M: {
+      total_codewords: 1992
+    },
+    Q: {
+      total_codewords: 1426
+    },
+    H: {
+      total_codewords: 1096
+    }
+  },
+  38 => {
+    L: {
+      total_codewords: 2702
+    },
+    M: {
+      total_codewords: 2102
+    },
+    Q: {
+      total_codewords: 1502
+    },
+    H: {
+      total_codewords: 1142
+    }
+  },
+  39 => {
+    L: {
+      total_codewords: 2812
+    },
+    M: {
+      total_codewords: 2216
+    },
+    Q: {
+      total_codewords: 1582
+    },
+    H: {
+      total_codewords: 1222
+    }
+  },
+  40 => {
+    L: {
+      total_codewords: 2956
+    },
+    M: {
+      total_codewords: 2334
+    },
+    Q: {
+      total_codewords: 1666
+    },
+    H: {
+      total_codewords: 1276
+    }
   }
 }.freeze
