@@ -1,0 +1,3 @@
+class QrCodeGenerator < ApplicationRecord
+  
+end
